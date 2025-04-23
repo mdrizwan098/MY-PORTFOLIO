@@ -46,3 +46,33 @@ h2{
     font-size: 40px;
     margin-top: 10px;
 }
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+.dropdown-menu li {
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional hover style */
+.dropdown-menu li a:hover {
+    color: #0056b3;
+}
